@@ -1,6 +1,17 @@
-html, body {
+html {
+    height: 100%
+}
+
+body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcff;
 }
 
 nav {
@@ -9,11 +20,18 @@ nav {
     z-index: 9999;
     bottom: 0;
     box-shadow: 0 -1px 3px rgba(0,0,0,0.20);
+    background-color: #fcfcff;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 750px) {
+    nav {
+        top: 0;
+        right: 1em;
+        width: 8em;
+        height: 10em;
+        box-shadow: none;
+    }
+
 }
 
 ul {
@@ -23,8 +41,20 @@ ul {
     justify-content: space-around;
 }
 
-li {
+/* li {
     display: inline;
+} */
+
+@media screen and (min-width: 750px) {
+    ul {
+        flex-direction: column;
+    }
+
+}
+
+.current {
+    border-bottom: 2px solid #000;
+    padding-bottom: 4px;
 }
 
 li a:link, a:visited {
@@ -33,12 +63,25 @@ li a:link, a:visited {
 }
 
 li a:hover {
-    color: #000;
+    color: darkgray;
     text-decoration: none;
 }
 
 li a:active {
     border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+@media screen and (min-width: 750px) {
+    li {
+        margin: 1em auto;
+    }
+
+}
+
+.name a:link, a:visited, a:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 .name {
@@ -47,16 +90,39 @@ li a:active {
     margin: .6em auto;
 }
 
+@media screen and (min-width: 750px) {
+    .name {
+        margin: .8em;
+        width: 7em;
+    }
+
+}
+
 .name h3 {
-    margin: 0;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 750px) {
+    .name h3 {
+        width: 112px;
+    }
+
 }
 
 .typedScript {
+    flex: 1;
     text-align: center;
 	margin: 20vh 5vh 0;
 	font-size: 10vh;
 	font-weight: 300;
 	color: #2b2b2b;
+}
+
+@media screen and (min-width: 750px) {
+    .typedScript {
+        margin: 35vh 5vh 0;
+    }
+
 }
 
 .typedScript::after {
@@ -77,4 +143,32 @@ li a:active {
 @keyframes blink{
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+.bio {
+    margin: 2em 1em 0;
+	font-size: 2em;
+    font-weight: 300;
+    flex: 1;
+}
+
+@media screen and (min-width: 750px) {
+    .bio {
+        margin: 6em 6em 0;
+    }
+
+}
+
+footer {
+    margin: 1em auto;
+    text-align: center;
+}
+
+footer a:link, a:visited, a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: .8em;
 }
