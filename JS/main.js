@@ -1,10 +1,10 @@
 // Global variables
-var text = "Shall we play a game?";
-var typeWriter;
-var index = 0;
+let text = "Shall we play a game?";
+let typeWriter;
+let index = 0;
 
 // Typewriting effect
-typeWriter = setInterval(function() {
+typeWriter = setInterval(() => {
 	document.querySelector(".typedScript").textContent += text[index];
 
 	index += 1;
@@ -14,3 +14,7 @@ typeWriter = setInterval(function() {
 	}
 
 }, 100);
+
+
+//show hidden label on input
+
