@@ -136,21 +136,21 @@ HOMEPAGE
 
 .typedScript {
     flex: 1;
-    text-align: center;
+    text-align: left;
 	margin: 20vh 5vh 0;
-	font-size: 10vh;
+	font-size: 8vh;
 	font-weight: 300;
 	color: #000;
 }
 
 .typedScript::after {
-    content: " █";
-    /*animation: blink 500ms linear infinite alternate;*/
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
 }
 
 @media screen and (min-width: 750px) {
     .typedScript {
-        margin: 35vh 5vh 0;
+        margin: 25vh 15vw 0;
     }
 
 }
