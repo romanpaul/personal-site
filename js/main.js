@@ -1,5 +1,5 @@
 // Global variables
-let text = "Hi, I'm Roman. I make things for the net.";
+let text = "Hi, I'm Roman. I talk to machines.";
 let typeArray = text.split(""); 
 let typeWriter;
 
