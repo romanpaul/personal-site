@@ -4,60 +4,93 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Roman Paul | Web Developer</title>
+        <title>Roman Marr | Software Developer</title>
         <meta name="description" content="">
-        <meta name="keywords" content="Web Developer, Interactive Developer, Front End developer, Full Stack Developer, UI, UX, Portfolio, HTML5, CSS3，Sass, JavaScript, jQuery, Node.js, WordPress, Git">
-        <meta name="author" content="Roman Paul">
+        <meta name="keywords" content=".Net, C#, Web Developer, Interactive Developer, Front End developer, Full Stack Developer, UI, UX, Portfolio, HTML5, CSS3，Sass, JavaScript, jQuery, Node.js, WordPress, Git">
+        <meta name="author" content="Roman Marr">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108384521-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108384521-1');
+        </script>
+
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Raleway:300, 400" rel="stylesheet">
+	<meta name="viewport" content="width=device-width">
     </head>
 
     <body>
 
         <div class="name">
-            <h3><a href="index.html">Roman Paul</a></h3>
+            <h3><a href="index.html">Roman Marr</a></h3>
         </div>
 
         <div id="contact-wrap">   
+
 		    <div id="contact-area">
-                <form method="post" action="#" name="myForm">
-            
-                    <input class="validate" type="text" name="Name" id="Name" placeholder="Full Name" required pattern="^[^0-9]+$"/>
-        
-                    <input class="validate" type="email" name="Email" id="email" placeholder="Email" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"/>
 
-                    <input type="text" name="Phone" id="Phone" placeholder="Phone"/>
-                    
-                    <textarea name="Message" rows="20" cols="20" id="Message" placeholder="Message" required></textarea>
+                <form class="contactForm" method="post" action="mailer.php" name="myForm">
 
-                    <input onclick="validate()" type="submit" name="submit" value="Submit" class="submit-button"/>
+                    <div class="fields">
+                        <label for="Name">Name</label>
+                        <input class="validate" type="text" name="name" id="name" placeholder="Your Name" required pattern="^[^0-9]+$"/>
+                    </div>
+
+                    <div class="fields">
+                        <label for="Email">Email</label>
+                        <input class="validate" type="email" name="email" id="email" placeholder="Your Email" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"/>
+                    </div>
+
+                    <div class="fields">
+                        <label for="Phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="Phone"/>
+                    </div>
+
+                    <div class="fields">
+                        <label for="Message">Message</label>
+                        <textarea name="message" rows="20" cols="20" id="message" placeholder="How can I help you?" required></textarea>
+                    </div>
+                        <input onclick="validate()" type="submit" name="submit" value="Submit" class="submit-button"/>
                     
                 </form>
+
+                
             </div>
+        
         </div>
+
+        <div class="formMessages"></div>
         
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li class="current"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <footer>
             <div>
-                <h4><a href="mailto:hello@romanpaul.io">hello@romanpaul.io</a></h4>
+                <h4><a href="mailto:hello@romanmarr.com">hello@romanmarr.com</a></h4>
             </div>
             <div>
                 <h5> <a href="https://twitter.com/theromanpaul">Twitter</a> | <a href="https://www.linkedin.com/in/theromanpaul/">LinkedIn</a> | <a href="https://github.com/romanpaul">GitHub</a></h5>
             </div>
             <div>
-                <p>Coded with love and vanilla JavaScript | &copy 2017 Roman Paul</p>
+                <p>Coded with love and JavaScript | &copy 2019 Roman Marr</p>
             </div>
         </footer>
 
-        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/contact.js"></script>
+        
         
     </body>
 </html>
