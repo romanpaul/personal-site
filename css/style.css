@@ -114,6 +114,11 @@ NAME BUTTON
     text-transform: uppercase;
 }
 
+.name {
+    padding: .5em .5em;
+    margin: .6em auto;
+}
+
 @media screen and (min-width: 750px) {
     .name {
         margin: 1.4em 0 1em 1.8em;
@@ -337,6 +342,22 @@ PROJECTS
 
 h1, h2 {
     font-family: 'Raleway', sans-serif;
+}
+
+.projects {
+    margin: 7em 3em;
+    font-size: 1.3em;
+    font-weight: 300;
+    flex: 1;
+    color: #000;
+}
+
+@media screen and (min-width: 750px) {
+    .projects {
+        margin: 5em 7em 3em;
+        font-size: 2em;
+    }
+
 }
 
 .heading {
