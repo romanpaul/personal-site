@@ -7,7 +7,7 @@ include 'inc/header.php';
 </div>
 
 <div class="bio mainContent">
-    <p>I'm a full stack .Net developer living in Louisville, Kentucky. My passion is for creating easy to use, accessible
+    <p>I'm a full stack developer living in Louisville, Kentucky. My passion is for creating easy to use, accessible
         technology that integrates real life with the digital world. I love traveling, my wife, my Kindle, and pretty
         much anything with four legs. True to the stereotype of my heritage, I enjoy a glass of good bourbon.</p>
 </div>

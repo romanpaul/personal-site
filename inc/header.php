@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Roman Marr | Software Developer</title>
+        <title>Roman Paul | Software Developer</title>
         <meta name="description" content="">
         <meta name="keywords" content=".Net, C#, Web Developer, Interactive Developer, Front End developer, Full Stack Developer, UI, UX, Portfolio, HTML5, CSS3，Sass, JavaScript, jQuery, Node.js, WordPress, Git">
-        <meta name="author" content="Roman Marr">
+        <meta name="author" content="Roman Paul">
         <meta name="viewport" content="width=device-width">
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,5 +28,5 @@
     <body>
         
         <div class="name">
-            <h3><a href="index.php">Roman Marr</a></h3>
+            <h3><a href="index.php">Roman Paul</a></h3>
         </div>

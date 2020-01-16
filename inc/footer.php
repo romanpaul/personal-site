@@ -7,7 +7,7 @@
                 href="https://github.com/romanpaul">GitHub</a></h5>
     </div>
     <div>
-        <p>Coded with 🖤 | &copy 2019 Roman Marr</p>
+        <p>Coded with 🖤 | &copy 2020 Roman Paul</p>
     </div>
 
 </footer>
